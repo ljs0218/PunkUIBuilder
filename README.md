@@ -12,3 +12,5 @@ btn.opacity = 155
 위 두개의 단점을 모두 해결하기 위해 제작하게 되었습니다.
 
 사용 방법은 [여기](https://cafe.naver.com/nekolandgames/28394)를 눌러 확인해주세요.
+
+펑크랜드에서 Export된 데이터를 빌드하려면 [LPage.lua](https://github.com/ljs0218/LPage.lua) 라이브러리가 필요합니다.
