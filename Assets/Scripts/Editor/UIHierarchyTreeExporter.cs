@@ -89,6 +89,12 @@ namespace Game.Scripts.UI
             if (type == null)
                 return null;
 
+            if (type.Equals("Viewport"))
+            {
+                // Viewport는 데이터에 포함하지 않음
+                t = t.GetChild(0);
+            }
+
             UIElementNode node = new UIElementNode();
             AddPropertiesByType(node, t);
 
@@ -115,6 +121,7 @@ namespace Game.Scripts.UI
             if (t.GetComponent<PanelControl>()) return "Panel";
             if (t.GetComponent<TextControl>()) return "Text";
             if (t.GetComponent<ImageControl>()) return "Image";
+            if (t.GetComponent<ViewportControl>()) return "Viewport";
             return null;
         }
 
