@@ -55,6 +55,7 @@ public static class HierarchyTypeLabelDrawer
         if (obj.GetComponent<TextControl>()) return "Text";
         if (obj.GetComponent<ImageControl>()) return "Image";
         if (obj.GetComponent<PanelControl>()) return "Panel";
+        if (obj.GetComponent<ViewportControl>()) return "Viewport";
         if (obj.GetComponent<Control>()) return "Control";
         return null;
     }
