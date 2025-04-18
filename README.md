@@ -14,3 +14,9 @@ btn.opacity = 155
 사용 방법은 [여기](https://cafe.naver.com/nekolandgames/28394)를 눌러 확인해주세요.
 
 펑크랜드에서 Export된 데이터를 빌드하려면 [LPage.lua](https://github.com/ljs0218/LPage.lua) 라이브러리가 필요합니다.
+
+2025-04-18
+- ViewPort 컨트롤 Hierachy 표기 안 됨 수정
+- BaseControl 클래스 scaleX, scaleY 프로퍼티 추가
+- Control 클래스 border 관련 프로퍼티 추가
+- BaseControl 클래스 maksed 추가
