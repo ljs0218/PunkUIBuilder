@@ -8,6 +8,7 @@ using UnityEditor.SceneManagement;
 namespace Game.Scripts.UI
 {
     [ExecuteAlways]
+    [RequireComponent(typeof(RectMask2D))]
     public class PanelControl : Control
     {
         public Scripts.Graphics.Color color { get; set; }

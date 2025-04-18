@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 
 #endif
 using UnityEngine;
+using UnityEngine.Timeline;
 using UnityEngine.UI;
 
 namespace Game.Scripts.UI
@@ -150,10 +151,14 @@ namespace Game.Scripts.UI
         {
             if (this == null) { return; }
 
-            var image = GetComponent<Image>();
-            if (image != null)
+            var rectMask2D = GetComponent<RectMask2D>();
+            if (rectMask2D != null && rectMask2D.enabled)
             {
-                masked = image.maskable;
+                masked = true;
+            }
+            else
+            {
+                masked = false;
             }
 
             showOnTop = _showOnTop;

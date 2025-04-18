@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 namespace Game.Scripts.UI
 {
     [ExecuteAlways]
+    [RequireComponent(typeof(RectMask2D))]
     public class ScrollPanelControl : Control
     {
         public Scripts.Graphics.Color color { get; set; }
